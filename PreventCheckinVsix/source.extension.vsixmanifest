@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="PreventCheckin.anavarror.1efc55fa-71ae-4aa4-9261-beec96423cb7" Version="1.0" Language="en-US" Publisher="Adrià Navarro" />
+    <DisplayName>Prevent Checkin 2015</DisplayName>
+    <Description xml:space="preserve">Prevent check-in from unwanted files</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.IntegratedShell" />
+  </Installation>
+  <Dependencies>
+    <!--<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />-->
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="PreventCheckinPolicies.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" Path="|PreventCheckinPolicies|" AssemblyName="|PreventCheckinPolicies;AssemblyName|" d:ProjectName="PreventCheckinPolicies" />
+  </Assets>
+</PackageManifest>

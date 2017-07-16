@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidPreventCheckinPackage">
+    <Groups>
+      <Group guid="guidPreventCheckinPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidPreventCheckinPackageCmdSet" id="AvoidCheckinId" priority="0x0100" type="Button">
+        <Parent guid="guidPreventCheckinPackageCmdSet" id="MyMenuGroup" />
+        <Strings>
+          <ButtonText>Avoid check-in</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidPreventCheckinPackage" value="{611c394d-527e-41d7-bca2-e5754b06000f}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidPreventCheckinPackageCmdSet" value="{d111fe8e-8553-47e9-8f2b-ad8d069cb33d}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="AvoidCheckinId" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
