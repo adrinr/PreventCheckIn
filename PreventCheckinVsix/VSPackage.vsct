@@ -6,14 +6,23 @@
 
   <Commands package="guidPreventCheckinPackage">
     <Groups>
-      <Group guid="guidPreventCheckinPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidPreventCheckinPackageCmdSet" id="ItemNodeMenu" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+      </Group>
+      <Group guid="guidPreventCheckinPackageCmdSet" id="CodeWindowMenu" priority="0x0700">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
       </Group>
     </Groups>
 
     <Buttons>
       <Button guid="guidPreventCheckinPackageCmdSet" id="AvoidCheckinId" priority="0x0100" type="Button">
-        <Parent guid="guidPreventCheckinPackageCmdSet" id="MyMenuGroup" />
+        <Parent guid="guidPreventCheckinPackageCmdSet" id="ItemNodeMenu" />
+        <Strings>
+          <ButtonText>Avoid check-in</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidPreventCheckinPackageCmdSet" id="AvoidCheckinId" priority="0x0100" type="Button">
+        <Parent guid="guidPreventCheckinPackageCmdSet" id="CodeWindowMenu" />
         <Strings>
           <ButtonText>Avoid check-in</ButtonText>
         </Strings>
@@ -27,7 +36,8 @@
 
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidPreventCheckinPackageCmdSet" value="{d111fe8e-8553-47e9-8f2b-ad8d069cb33d}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="CodeWindowMenu" value="0x1010" />
+      <IDSymbol name="ItemNodeMenu" value="0x1020" />
       <IDSymbol name="AvoidCheckinId" value="0x0100" />
     </GuidSymbol>
   </Symbols>

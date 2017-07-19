@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="PreventCheckin.anavarror.1efc55fa-71ae-4aa4-9261-beec96423cb7" Version="1.0" Language="en-US" Publisher="Adrià Navarro" />
+    <Identity Id="PreventCheckin.anavarror.1efc55fa-71ae-4aa4-9261-beec96423cb7" Version="0.1" Language="en-US" Publisher="Adrià Navarro" />
     <DisplayName>Prevent Checkin 2015</DisplayName>
     <Description xml:space="preserve">Prevent check-in from unwanted files</Description>
   </Metadata>

@@ -117,7 +117,8 @@ namespace PreventCheckinVsix.Commands
                 return;
             }
 
-            var files = this.GetSelectedItemsInSourceControl();
+            // var files = this.GetSelectedItemsInSourceControl();
+            var files = ProjectHelpers.GetSelectedItemPaths();
 
             if (this.excluded)
             {
